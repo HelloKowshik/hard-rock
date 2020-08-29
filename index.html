@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hard Rock Solution - Song Lyric App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar  navbar-dark my-3">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Hard Rock Solution">
+            </a>
+        </nav>
+
+        <main class="content-area">
+            <div class="search-bar col-md-6 mx-auto">
+                <h1 class="text-center">Lyrics Search</h1>
+                <div class="search-box my-5">
+                    <input type="text" class="form-control" placeholder="Enter your artist song name" id="search-input">
+                    <button class="btn btn-success search-btn">Search</button>
+                </div>
+            </div>
+            
+            <span id="error-text"></span>
+            <!-- === Fancy results === -->
+            <div class="search-result col-md-8 mx-auto py-4" id="showLyricsDiv"> <!--Parent-->
+                
+            </div> <!--Parent end-->
+
+            <!-- Single Lyrics -->
+            <div class="single-lyrics text-center" id="show-lyrics">
+                <h2 class="text-success mb-4"><span id='show-title'></span> <span id="show-artist"></span></h2>
+                <pre class="lyric text-white" id="lyric">
+                </pre>
+            </div> 
+
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
